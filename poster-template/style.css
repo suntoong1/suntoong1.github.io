@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+}
+
+div.poster {
+    background-color: whitesmoke;
+    width: 75%;
+}
+
+div.small {
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid black;
+}
+
+div.text {
+    font-family: arial;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border-top: 1px solid black;
+}
+
+div.text.one {
+    font-size: 100px;
+}
+div.text.two {
+    font-size: 60px;
+}
+div.text.three {
+    font-size: 30px;
+}
+
