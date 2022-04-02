@@ -24,13 +24,32 @@ div.text {
     border-top: 1px solid black;
 }
 
+/* rule 1 */
 div.text.one {
-    font-size: 100px;
+    font-size: 60px;
 }
 div.text.two {
     font-size: 60px;
 }
 div.text.three {
-    font-size: 30px;
+    font-size: 60px;
 }
 
+/* rule 2 */
+div.text.a {
+    color: blue;
+}
+div.text.b {
+    color: red;
+}
+div.text.c {
+    color: green;
+}
+
+/* rule 3 */
+div.text.x {
+}
+div.text.y {
+}
+div.text.z {
+}
