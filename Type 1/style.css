@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: "body";
+    src: url("Helvetica-Neue-LT-Std-93-Black-Extended_22550.ttf"); 
+  }
+
+div.poster {
+    background-color: black;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.small {
+    font-family: arial narrow;
+    font-style: italic;
+    color: rgb(40, 82, 222);
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+div.text {
+    font-family: body;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+/* rule 1 */
+div.text.one {
+    font-size: 40px;
+}
+div.text.two {
+    font-size: 70px;
+}     
+div.text.three {
+    font-size: 100px;
+}
+
+/* rule 2 */
+div.text.a {
+    font-family: body;
+}
+div.text.b {
+    font-family: arial narrow;
+    font-style: italic;
+}
+div.text.c {
+    font-family: arial;
+}
+
+/* rule 3 */
+div.text.x {
+    color: rgba(40, 82, 222, 1);
+    text-shadow: 0px 0px 12px rgb(40, 82, 222);
+    box-shadow: inset 0px -8px 20px rgba(70, 95, 221, 0.9);
+}
+div.text.y {
+    color: rgba(255, 105, 180,1);
+    text-shadow: 0px 0px 12px hotpink;
+    box-shadow: inset 0px -8px 20px rgba(214,86,165,0.9);
+}
+div.text.z {
+    color: rgba(49, 224, 78,1);
+    text-shadow: 0px 0px 12px rgb(49, 224, 78);
+    box-shadow: inset 0px -8px 20px rgba(49, 224, 78, 0.9);
+}

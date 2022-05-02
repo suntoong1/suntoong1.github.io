@@ -1,0 +1,122 @@
+body {
+    background-image: url('IMG_2396.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@font-face {
+    font-family:'font-1';
+    src:url('OTF Glusp.ttf');
+}
+
+div.poster {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.col{
+    overflow: hidden;
+    /* border: 1px solid cyan;
+    box-sizing: border-box; */
+}
+
+/* thirds */
+div.w1-3 {
+    width: 33.33%;
+}
+div.w2-3 {
+    width: 66.66%;
+}
+
+/* halfs */
+div.w1-2 {
+    width: 50%;
+}
+
+/* single */
+div.w1-1 {
+    width: 100%;
+}
+
+div.title {
+    font-family: font-1;
+    font-size: 80px;
+    letter-spacing: 70px;
+    padding-left: 70px;
+    text-align: center;
+    color: greenyellow;
+    text-shadow: 0px 0px 10px greenyellow;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+div.text {
+    font-family: font-1;
+    text-align: center;
+    font-size: 50px;
+    transition: 0.5s;
+    color: transparent;
+    padding-top: 95px;
+    padding-bottom: 80px;
+}
+
+/* rule 1 */
+div.text.one {
+    background-image: url("byob1.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+div.text.two {
+    background-image: url("byob2.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+div.text.three {
+    background-image: url("byob3.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* rule 2 */
+div.text.a {
+    box-shadow: inset 0px 0px 20px greenyellow;
+    text-shadow: 0px 0px 12px greenyellow;
+}
+div.text.b {
+    box-shadow: inset 0px 0px 30px black;
+    text-shadow: 0px 0px 12px black;
+}
+div.text.c {
+    box-shadow: inset 0px 0px 20px transparent;
+    text-shadow: 0px 0px 12px transparent;
+}
+
+/* rule 3 */
+div.text.x {
+    letter-spacing: -10px;
+}
+div.text.y {
+    letter-spacing: 10px;
+}
+div.text.z {
+    letter-spacing: 0px;
+}
+
+div.small {
+    font-family: arial narrow;
+    font-size: 20px;
+    text-align: left;
+    color: greenyellow;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
