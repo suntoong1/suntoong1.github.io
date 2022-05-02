@@ -1,0 +1,47 @@
+body {
+    background-color: whitesmoke;
+}
+
+div.poster {
+    background-color: transparent;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.small {
+    font-family: arial;
+    font-size: 16px;  
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+}
+
+div.text {
+    font-family: helvetica;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.8s;
+    border-radius: 15px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+div.text.one {
+    font-size: 30px;
+    font-weight: 200;
+    background-color: rgb(240, 147, 61);
+}
+div.text.two {
+    font-size: 60px;
+    font-weight: normal;
+    background-color: rgb(38, 180, 109);
+}
+div.text.three {
+    font-size: 120px;
+    font-weight: 600;
+    background-color: whitesmoke;
+}
