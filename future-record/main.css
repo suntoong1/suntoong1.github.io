@@ -1,0 +1,191 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+img {
+    width: 100%;
+}
+
+div.page {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: helvetica;
+    font-size: 24px;
+    color: black;
+}
+
+div.sidebar {
+    /* border-right: 2px solid black; */
+    width: 25%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: inset -2px 0px 25px rgb(180, 180, 180);
+}
+
+div.sidecontain {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.6vw;
+}
+
+div.logo {
+    /* border: 3px solid yellowgreen; */
+    width: 100%;
+    font-size: 36px;
+    margin-bottom: 36px;
+}
+
+div.navi {
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+    /* border-top: 2px solid black; */
+}
+
+div.navi a {
+    border: 2px solid rgb(150, 150, 150);
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+}
+
+div.navi a:hover {
+    border: 2px solid blue;
+    background-color: blue;
+    color: white;
+}
+
+div.main {
+    /* border: 3px solid red; */
+    width: 75%;
+}
+
+div.masthead {
+    font-size: 300px;
+    margin: 1.6vw;
+    line-height: 240px;
+    text-align: left;
+}
+
+div.subhead {
+    font-size: 48px;
+    margin: 1.6vw;
+    padding-bottom: 24px;
+}
+
+div.category {
+    margin-left: 1.6vw;
+    margin-right: 1.6vw;
+    margin-top: 36px;
+    padding-bottom: 6px;
+    /* padding-top: 4px; */
+    border-bottom: 2px solid black;
+    /* border-top: 2px solid black; */
+}
+
+div.container {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 1vw;
+}
+
+div.item {
+    /* border: 3px solid aqua; */
+    width: 33.33%;
+    position: relative;
+    padding: 0.6vw;
+}
+
+/* div.item.pic {
+    background-image: url("images/chair-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding-top: 10vw;
+    height: 25vw;
+    font-size: 4vw;
+    border-radius: 20px;
+} */
+
+div.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 4vw;
+}
+
+div.item a {
+    color: transparent;
+    text-decoration: none;
+}
+
+div.item a:hover {
+    color: white;
+}
+
+div.aboutcontain {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vw;
+}
+
+div.about {
+    /* border: 3px solid blue; */
+    width: 66.66%;
+    font-size: 48px;
+    color: black;
+    padding: 0.6vw;
+}
+
+div.spin {
+    /* border: 3px solid red; */
+    width: 33.33%;
+    padding: 0.6vw;
+    margin-top: 200px;
+}
+div.spin img {
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+div.footer {
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vw;
+    color: black;
+    font-size: 15px;
+    border-top: 1px solid black;
+}
