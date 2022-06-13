@@ -1,23 +1,118 @@
-header
-    logo
-        a
-    nav
-        a,a,a
-title
-about
-featured-image
-footnotes
-    note title
-    note desc
-    note outgoing link
-container
-    item
-        image
-        text
-    item
-        image
-        text
-    item
-        image
-        text
-footer
+INDEX
+page
+    sidebar
+        sidecontain
+            logo
+                a
+        sidecontain
+            navi blue
+                a
+            navi green
+                a
+            navi orange
+                a
+            navi black
+                a
+    main
+        masthead
+        subhead
+            a
+        category
+        container
+            item-index 
+                a
+                    image
+                    overlay
+            item-index 
+                a
+                    image
+                    overlay
+            item-index 
+                a
+                    image
+                    overlay
+            item-index 
+                a
+                    image
+                    overlay
+            item-index 
+                a
+                    image
+                    overlay
+            item-index 
+                a
+                    image
+                    overlay
+        footer
+            footcol, footcol, footcol, footcol
+
+ABOUT
+page
+    sidebar
+        sidecontain
+            logo
+                a
+        sidecontain
+            navi blue
+                a
+            navi green
+                a
+            navi orange
+                a
+            navi black
+                a
+    main
+        container
+            about
+            icon
+                image
+        footer
+            footcol, footcol, footcol, footcol
+
+DETAIL
+page
+    sidebar
+        sidecontain
+            logo
+                a
+        sidecontain
+            navi blue
+                a
+            navi green
+                a
+            navi orange
+                a
+            navi black
+                a
+    main
+        masthead
+        container
+            item-body
+                image,image
+            item-body
+                subtitle
+                description
+                    a
+                description
+                price
+                button
+                notice
+        category
+        container
+            item-recommend
+                a
+                    image
+            item-recommend
+                a
+                    image
+            item-recommend
+                a
+                    image
+            item-recommend
+                a
+                    image
+            item-recommend
+                a
+                    image
+        footer
+            footcol, footcol, footcol, footcol
