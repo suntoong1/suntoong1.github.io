@@ -1,10 +1,20 @@
+body {
+    font-family: helvetica;
+    font-size: 24px;
+    color: black;
+}
+
+@font-face {
+    font-family: 'basic';
+    src: url('BBBouquet-Regular.otf');
+}
+
 a {
     color: black;
-    text-decoration: none;
 }
 
 a:hover {
-    color: blue;
+    color: rgb(249, 101, 16);
 }
 
 img {
@@ -14,34 +24,33 @@ img {
 div.page {
     display: flex;
     flex-wrap: wrap;
-    font-family: helvetica;
-    font-size: 24px;
-    color: black;
 }
 
 div.sidebar {
-    /* border-right: 2px solid black; */
-    width: 25%;
+    width: 20%;
     height: 100vh;
     position: sticky;
     top: 0;
     left: 0;
-    background-color: white;
-    box-shadow: inset -2px 0px 25px rgb(180, 180, 180);
 }
 
 div.sidecontain {
-    /* border: 3px solid blue; */
     display: flex;
     flex-wrap: wrap;
-    margin: 1.6vw;
+    margin-top: 1.6vw;
+    margin-left: 1.6vw;
+    margin-right: 1.6vw;
+    margin-bottom: 36px;
 }
 
 div.logo {
-    /* border: 3px solid yellowgreen; */
     width: 100%;
     font-size: 36px;
-    margin-bottom: 36px;
+    font-family: basic;
+}
+
+div.logo a {
+    text-decoration: none;
 }
 
 div.navi {
@@ -49,7 +58,6 @@ div.navi {
     padding-top: 6px;
     padding-bottom: 6px;
     margin-bottom: 8px;
-    /* border-top: 2px solid black; */
 }
 
 div.navi a {
@@ -61,40 +69,58 @@ div.navi a {
     border-radius: 50px;
     background-color: white;
     color: black;
+    text-decoration: none;
 }
 
-div.navi a:hover {
-    border: 2px solid blue;
-    background-color: blue;
+div.navi.blue a:hover {
+    border: 2px solid rgb(49, 22, 224);
+    background-color: rgb(49, 22, 224);
+    color: white;
+}
+div.navi.green a:hover {
+    border: 2px solid rgb(8, 185, 93);
+    background-color: rgb(8, 185, 93);
+    color: white;
+}
+div.navi.orange a:hover {
+    border: 2px solid rgb(249, 101, 16);
+    background-color: rgb(249, 101, 16);
+    color: white;
+}
+div.navi.black a:hover {
+    border: 2px solid black;
+    background-color: black;
     color: white;
 }
 
 div.main {
-    /* border: 3px solid red; */
-    width: 75%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 div.masthead {
-    font-size: 300px;
+    font-size: 130px;
+    line-height: 100px;
     margin: 1.6vw;
-    line-height: 240px;
-    text-align: left;
+    font-family: basic;
+    letter-spacing: -4px;
+    width: 100%;
 }
 
 div.subhead {
-    font-size: 48px;
+    width: 100%;
+    font-size: 36px;
     margin: 1.6vw;
-    padding-bottom: 24px;
 }
 
 div.category {
+    width: 100%;
     margin-left: 1.6vw;
     margin-right: 1.6vw;
-    margin-top: 36px;
+    margin-top: 48px;
     padding-bottom: 6px;
-    /* padding-top: 4px; */
     border-bottom: 2px solid black;
-    /* border-top: 2px solid black; */
 }
 
 div.container {
@@ -103,24 +129,11 @@ div.container {
     margin: 1vw;
 }
 
-div.item {
-    /* border: 3px solid aqua; */
+div.item-index {
     width: 33.33%;
     position: relative;
     padding: 0.6vw;
 }
-
-/* div.item.pic {
-    background-image: url("images/chair-1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    text-align: center;
-    padding-top: 10vw;
-    height: 25vw;
-    font-size: 4vw;
-    border-radius: 20px;
-} */
 
 div.overlay {
     position: absolute;
@@ -133,59 +146,101 @@ div.overlay {
     justify-content: center;
     display: flex;
     font-size: 4vw;
+    font-family: basic;
 }
 
-div.item a {
+div.item-index a {
     color: transparent;
     text-decoration: none;
 }
 
-div.item a:hover {
-    color: white;
-}
-
-div.aboutcontain {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1vw;
+div.item-index a:hover {
+    color:white;
 }
 
 div.about {
-    /* border: 3px solid blue; */
     width: 66.66%;
-    font-size: 48px;
+    font-size: 36px;
+    line-height: 40px;
     color: black;
     padding: 0.6vw;
 }
 
-div.spin {
-    /* border: 3px solid red; */
+div.icon {
     width: 33.33%;
     padding: 0.6vw;
-    margin-top: 200px;
-}
-div.spin img {
-    animation-name: spin;
-    animation-duration: 10000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
 
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+div.item-body {
+    width: 50%;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
+}
+
+div.item-body img {
+    margin-bottom: 48px;
+}
+
+div.subtitle {
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+div.description {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+div.price {
+    font-size: 36px;
+    margin-bottom: 24px;
+    font-family: basic;
+}
+
+div.button {
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 36px;
+    margin-bottom: 12px;
+    background-color: rgb(150, 150, 150);
+    color: white;
+    text-align: center;
+}
+
+div.notice {
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 24px;
+    color: gray;
+}
+
+div.item-recommend {
+    width: 20%;
+    padding: 0.6vw;
+    margin-bottom: 48px;
 }
 
 div.footer {
-    /* border: 3px solid blue; */
+    /* border-top: 2px solid gray; */
     display: flex;
     flex-wrap: wrap;
-    margin: 1vw;
-    color: black;
-    font-size: 15px;
-    border-top: 1px solid black;
+    width: 100%;
+    padding-left: 1.6vw;
+    padding-right: 1.6vw;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+div.footcol {
+    /* border: 3px solid yellow; */
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
 }
