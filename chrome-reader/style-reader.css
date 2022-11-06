@@ -1,0 +1,179 @@
+body {
+    background-color: rgb(236, 234, 227);
+    background-image: url(images/bg-reader.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: transparent;
+    text-shadow: 0 0 3px black;
+}
+
+img {
+    width: 100%;
+}
+
+div.page {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+div.sidebar {
+    width: 13.5%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap; 
+    position: fixed;
+    justify-content: center;
+    transform: skewY(11deg);
+}
+
+div.exit {
+    width: 80%;
+    margin-top: 40px;
+}
+
+div.exit img {
+    box-shadow: -3px 6px 3px rgba(30, 10, 10, 0.7);
+}
+
+div.btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 60px;
+}
+
+div.btns img {
+    border-radius: 9px;
+    box-shadow: -3px 8px 3px rgba(30, 10, 10, 0.7);
+}
+
+div.btn-navi {
+    width: 47%;
+}
+
+div.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 13.5%;
+    width: 86.5%;
+}
+
+div.left {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    transform: skewY(11deg);
+    margin-top: 4.7%;
+    padding: 40px;
+    row-gap: 20px;
+
+}
+
+div.title {
+    width: 100%;
+    font-family: helvetica;
+    font-size: 60px;
+    letter-spacing: -2px;
+}
+
+div.subtitle {
+    width: 50%;
+    font-family: altesse-std-24pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+div.bodtext {
+    width: 100%;
+    font-family: helvetica;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -1px;
+}
+
+div.align-r {
+    text-align: right;
+}
+
+div.right {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: skewY(-11deg);
+    margin-top: 4.9%;
+    padding: 80px;
+}
+
+div.right img {
+    box-shadow: 4px 8px 4px rgba(30, 10, 10, 0.7);
+}
+
+div.caption {
+    margin-top: 20px;
+    font-family: helvetica;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+}
+
+div.image1-1 {
+    margin-top: 500px;
+}
+div.image1-2 {
+    margin-top: 100px;
+}
+div.image1-3 {
+    margin-top: -300px;
+}
+div.image1-4 {
+    margin-top: 200px;
+}
+
+div.image2-1 {
+    margin-top: 200px;
+}
+div.image2-2 {
+    margin-top: -100px;
+}
+div.image2-3 {
+    margin-top: -100px;
+}
+div.image2-4 {
+    margin-top: 100px;
+}
+
+div.image3-1 {
+    margin-top: 300px;
+}
+div.image3-2 {
+    margin-top: 150px;
+}
+div.image3-3 {
+    margin-top: -600px;
+}
+div.image3-4 {
+    margin-top: -200px;
+}
+
+div.top {
+    position: fixed;
+    top:0;
+    right:0;
+    width: 86.7%;
+}
