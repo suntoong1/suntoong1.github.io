@@ -1,0 +1,120 @@
+body {
+    background-color: #00aeef;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.nswr {
+    position: sticky;
+    top: 60px;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: linear-gradient(0deg, #00aeef 95%, #00afef00 100%);
+}
+
+.convo {
+    position: sticky;
+    top: -40px;
+    padding-top: 140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: calc(100vh + 40px);
+    background: linear-gradient(0deg, #00aeef 95%, #00afef00 100%);
+}
+
+.bigtext {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 100px;
+    letter-spacing: -2px;
+    line-height: 90px;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.header.when {
+    padding-left: 215px;
+}
+
+.logo {
+    width: 185px;
+}
+
+.bar {
+    width: 100%;
+    border-top: 2px solid white;
+    position: fixed;
+    bottom: 0;
+    background-color: #00aeef;
+    text-align: center;
+    padding: 10px;
+}
+
+.para {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+}
+
+.topbar {
+    display: flex;
+    flex: wrap;
+    position: fixed;
+    top: 15px;
+    background: linear-gradient(180deg, #00afefc1 50%, #00afef00 100%);
+    width: 100%;
+    justify-content: center;
+}
+
+.topbar img {
+    width: 100px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 100%;
+    margin-top: 60px;
+    row-gap: 30px;
+}
+
+.info img {
+    border-radius: 30px;
+    border: 3px solid white;
+}
